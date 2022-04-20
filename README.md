@@ -1,5 +1,5 @@
 # Math Magician
-
+In this project, i developed a React component that will hold the core functionality: a calculator.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
