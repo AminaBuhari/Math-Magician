@@ -11,39 +11,36 @@ class Calculator extends React.Component {
         next: null,
         operation: null,
       },
-      keyValue: 0,
     };
-    this.handleChanger.bind();
+    this.handleChanger = this.handleChanger.bind(this);
   }
 
-  handleChanger(event) {
-    const e = this.state;
+   handleChanger = (event) => {
+     const e = this.state;
+     const value = event.target.textContent;
+     const { total, next, operation } = calculate(e.operate, value);
+     this.setState({ operate: { total, next, operation } });
 
-    const value = event.target.textContent;
-    const object = calculate(e.operate, value);
-    const { total, next, operation } = object;
+     const console = document.querySelector('.console');
+     if (next !== null) (console.innerHTML = e.operate.next);
+     else if (total !== null) (console.innerHTML = e.operate.total);
+     else (console.innerHTML = 0);
+   }
 
-    if (total) this.setState({ keyValue: total });
-    else if (operation && next) this.setState({ keyValue: next });
-    else this.setState({ keyValue: 0 });
-    this.setState(object);
-  }
+   render() {
+     const e = this.state;
+     return (
+       <div className="wrapper">
+         <div className="console">0</div>
+         {e.datas.map((data) => (
+           <button type="button" key={data.id} onClick={this.handleChanger} className="container">
+             {data.label}
+           </button>
 
-  render() {
-    const e = this.state;
-    return (
-      <div className="wrapper">
-        <div className="console">{keyValue}</div>
-        {e.datas.map((data) => (
-          <div className="container" key={data.id}>
-            <button type="button" onClick={this.handleChanger} className={data.className}>
-              {data.label}
-            </button>
-          </div>
-        ))}
-      </div>
-    );
-  }
+         ))}
+       </div>
+     );
+   }
 }
 
 export default Calculator;
