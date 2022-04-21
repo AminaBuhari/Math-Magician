@@ -27,20 +27,20 @@ class Calculator extends React.Component {
     else (answer.innerHTML = 0);
   }
 
-   render() {
-     const e = this.state;
-     return (
-       <div className="wrapper">
-         <div className="console">0</div>
-         {e.datas.map((data) => (
-           <button type="button" key={data.id} onClick={this.handleChanger} className="container">
-             {data.label} 
-           </button>
+  render() {
+    const e = this.state;
+    return (
+      <div className="wrapper">
+        <div className="console">0</div>
+        {e.datas.map((data) => (
+          <button type="button" key={data.id} onClick={this.handleChanger} className="container">
+            {data.label}
+          </button>
 
-         ))}
-       </div>
-     );
-   }
+        ))}
+      </div>
+    );
+  }
 }
 
 export default Calculator;
