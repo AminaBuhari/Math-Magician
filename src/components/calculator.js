@@ -15,17 +15,17 @@ class Calculator extends React.Component {
     this.handleChanger = this.handleChanger.bind(this);
   }
 
-   handleChanger = (event) => {
-     const e = this.state;
-     const value = event.target.textContent;
-     const { total, next, operation } = calculate(e.operate, value);
-     this.setState({ operate: { total, next, operation } });
-
-     const console = document.querySelector('.console');
-     if (next !== null) (console.innerHTML = e.operate.next);
-     else if (total !== null) (console.innerHTML = e.operate.total);
-     else (console.innerHTML = 0);
-   }
+  handleChanger = (event) => {
+    const { operate } = this.state;
+    const value = event.target.textContent;
+    const object = calculate(operate, value);
+    const { total, next } = object;
+    this.setState({ operate: object });
+    const answer = document.querySelector('.console');
+    if (next !== null) (answer.innerHTML = next);
+    else if (total !== null) (answer.innerHTML = total);
+    else (answer.innerHTML = 0);
+  }
 
    render() {
      const e = this.state;
@@ -34,7 +34,7 @@ class Calculator extends React.Component {
          <div className="console">0</div>
          {e.datas.map((data) => (
            <button type="button" key={data.id} onClick={this.handleChanger} className="container">
-             {data.label}
+             {data.label} 
            </button>
 
          ))}
