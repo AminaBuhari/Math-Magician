@@ -5,7 +5,7 @@ const Calculator = () => {
   const datas = [
     { label: 'AC' },
     { label: '+/-' },
-    { label: '/' },
+    { label: '÷' },
     { label: '%' },
     { label: 7 },
     { label: 8 },
