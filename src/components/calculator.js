@@ -6,7 +6,7 @@ function Calculator() {
   return (
     <div className={styles.wrap}>
       <main>
-        <h2 className={styles.head}>Lets do some maths!</h2>
+        <h2 className={styles.head}>Lets do some math!</h2>
       </main>
       <div className={styles.calcwrap}>
         <Calc />
