@@ -36,4 +36,3 @@ jobs:
       - name: Stylelint Report
         run: npx stylelint "**/*.{css,scss}"
 
-
