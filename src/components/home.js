@@ -25,7 +25,7 @@ function Home() {
           Phasellus libero ante, malesuada sit amet mauris tempus, ultricies rutrum ex.
           In ac dui sodales, rhoncus orci et, rutrum orci.
           Vestibulum fermentum pellentesque nunc, vitae egestas ligula gravida quis.
-          Nullam arcu urna, varius id erat in, hendrerit imperdiet enim.
+          Nullam arcu urna, hendrerit imperdiet enim.
         </p>
       </main>
 
