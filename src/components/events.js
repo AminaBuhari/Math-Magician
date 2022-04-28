@@ -1,7 +1,7 @@
 import React from 'react';
 import calculate from './logic/calculator';
 
-const Calculator = () => {
+const Calc = () => {
   const datas = [
     { label: 'AC' },
     { label: '+/-' },
@@ -57,4 +57,4 @@ const Calculator = () => {
   );
 };
 
-export default Calculator;
+export default Calc;
