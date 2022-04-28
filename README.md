@@ -14,9 +14,10 @@ To get a local copy up and running follow this simple step:
 [Live Demo Link]()
 
 # Screenshot 
+![calculator](https://user-images.githubusercontent.com/66526480/164282846-121198ae-d948-40ff-a5ea-1faf29cf19e0.png)
 ![Homepage](https://user-images.githubusercontent.com/66526480/165752986-b5a731af-114c-493d-903a-05c9f448c7a0.PNG)
 ![Calculator page](https://user-images.githubusercontent.com/66526480/165749977-9dfa4db7-aa97-45d6-87df-abaca2f4a165.PNG)
-![About page](https://user-images.githubusercontent.com/66526480/165753019-d0aec00e-be26-404d-8fa2-ba6f98531e8b.PNG)
+![About](https://user-images.githubusercontent.com/66526480/165753019-d0aec00e-be26-404d-8fa2-ba6f98531e8b.PNG)
 
 # Author
 
