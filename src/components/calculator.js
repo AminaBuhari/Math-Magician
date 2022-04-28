@@ -1,28 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Calc from './events';
+import styles from './calculator.module.scss';
 
 function Calculator() {
   return (
-    <>
-      <nav className="nav">
-        <h1>
-          Math Magicians
-        </h1>
-        <ul className="navList">
-          <li><Link to="/" className="dec">Home</Link></li>
-          <li><Link to="/calculator" className="calculator">Calculator</Link></li>
-          <li><Link to="/about" className="dec">Quotes</Link></li>
-        </ul>
-      </nav>
+    <div className={styles.wrap}>
       <main>
-        <h2>Who are we?</h2>
-        <p>
-          That feels like an existential question, don't you
-          think?
-        </p>
+        <h2 className={styles.head}>Lets do some maths!</h2>
       </main>
-      <nav />
-    </>
+      <div className={styles.calcwrap}>
+        <Calc />
+      </div>
+    </div>
   );
 }
 

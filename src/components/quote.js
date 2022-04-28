@@ -1,20 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 function Quote() {
-    return (
-      <>
-        <main>
-          <h2>Who are we?</h2>
-          <p>
-            That feels like an existential question, don't you
-            think?
-          </p>
-        </main>
-        <nav>
-         
-        </nav>
-      </>
-    );
+  return (
+    <main>
+      <p className="text">
+        Mathematics is not about numbers, equations, computations or algorithms: it is about understanding. -William Paul Thurston
+      </p>
+    </main>
+  );
 }
-  
-export default Quote
+
+export default Quote;
