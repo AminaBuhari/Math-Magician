@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
-function About() {
+import { Link } from 'react-router-dom';
+function Quote() {
     return (
       <>
         <main>
@@ -11,10 +11,10 @@ function About() {
           </p>
         </main>
         <nav>
-          <Link to="/">Home</Link>
+         
         </nav>
       </>
     );
 }
   
-export default About
+export default Quote
