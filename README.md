@@ -11,7 +11,7 @@ To get a local copy up and running follow this simple step:
 - Run `npm start`
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://math-magician-4.herokuapp.com/)
 
 # Screenshot 
 ![calculator](https://user-images.githubusercontent.com/66526480/164282846-121198ae-d948-40ff-a5ea-1faf29cf19e0.png)
