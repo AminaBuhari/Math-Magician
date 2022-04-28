@@ -10,7 +10,7 @@ function App() {
 
     <div className="App">
       <nav className="nav">
-        <h1 className = "head">
+        <h1 className="head">
           Math Magicians
         </h1>
         <ul className="navList">
@@ -25,7 +25,7 @@ function App() {
         <Route path="calculator" element={<Calculator />} />
 
       </Routes>
-      
+
     </div>
   );
 }
